@@ -36,12 +36,12 @@ async def multi_choice_question(message: Message):
 
 
 @start_router.message(Command("help"))
-async def cmd_start(message: Message):
+async def cmd_help(message: Message):
     await message.answer(HELP_COMMANDS)
 
 
 @start_router.message(Command("test"))
-async def cmd_start(message: Message):
+async def cmd_test(message: Message):
     await message.answer('test')
 
 
